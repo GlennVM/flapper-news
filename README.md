@@ -1,2 +1,3 @@
 # Flapper News
-MEAN stack app made following this awesome [tutorial](https://thinkster.io/angulartutorial/mean-stack-tutorial/).
+Een tutorial van thinkster.io.
+In opdracht van het vak webapps (Hogeschool Gent).
