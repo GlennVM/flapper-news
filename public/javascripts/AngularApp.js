@@ -228,3 +228,30 @@ app.controller('PostsCtrl', [
 			posts.upvoteComment(post, comment);
 		};
 	}]);
+
+var sliderApp = angular.module('sliderApp', []);
+
+sliderApp.directive('slider', function($timeout) {
+  return {
+    restrict: 'AE',
+    replace: true,
+    scope: {
+      images: '='
+    },
+    link: function(scope, elem, attrs) {},
+    templateUrl: 'templates/templateurl.html'
+  };
+});
+
+sliderApp.controller('SliderController', function($scope) {
+  $scope.images = [{
+    src: 'Aardappel-champignonschotel met filodeeg.jpg',
+    title: 'Aardappel-champignonschotel met filodeeg'
+  }, {
+    src: 'Aardbeien met balsamico-azijn en verse munt.jpg',
+    title: 'Aardbeien met balsamico-azijn en verse munt'
+  }, {
+    src: 'Bokkenbonen.jpg',
+    title: 'Bokkenbonen'
+  }];
+});
