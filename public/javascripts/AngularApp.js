@@ -1,4 +1,4 @@
-var app = angular.module('flapperNews',['ui.router']);
+var app = angular.module('flapperNews',['ui.router','myDir']);
 
 app.controller('MainCtrl', ['$scope', 'posts', 'auth', function($scope, posts, auth){
 	$scope.test = "Hello world";
@@ -191,6 +191,10 @@ app.config([
 					return posts.getAll();
 				}]
 			}
+		})
+		.state('dir', {
+			url: '/dir',
+			templateUrl: '/dir.html'
 		})
 		.state('posts', {
 			url: '/posts/{id}',

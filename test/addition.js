@@ -1,4 +1,10 @@
-'use strict';
+describe('true', function(){
+	it('should be true', function(done){
+		var val = true;
+		val.should.equal(true);
+		done();
+	});
+});
 
 describe('addition', function () {
  it('should add 1+1 correctly', function (done) {
@@ -14,4 +20,8 @@ describe('addition', function () {
  		twoPlusTwo.should.equal(4);
  		done();
  });
+
+
+
+
 });
