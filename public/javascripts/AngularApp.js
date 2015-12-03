@@ -22,18 +22,6 @@ app.controller('MainCtrl', ['$scope', 'posts', 'auth', function($scope, posts, a
 	};
 }]);
 
-app.directive('slider', function($timeout) {
-  return {
-    restrict: 'AE',
-    replace: true,
-    scope: {
-      images: '='
-    },
-    link: function(scope, elem, attrs) {},
-    templateUrl: 'index.html'
-  };
-});
-
 app.controller('NavCtrl', [
 '$scope',
 'auth',
