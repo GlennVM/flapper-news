@@ -1,4 +1,4 @@
-var app = angular.module('flapperNews', ['ui.router']);
+var app = angular.module('flapperNews',['ui.router']);
 
 app.controller('MainCtrl', ['$scope', 'posts', 'auth', function($scope, posts, auth){
 	$scope.test = "Hello world";
@@ -227,4 +227,4 @@ app.controller('PostsCtrl', [
 		$scope.voteUp = function(comment){
 			posts.upvoteComment(post, comment);
 		};
-	}]);
+}]);
