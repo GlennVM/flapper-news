@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node_modules/.bin/app",
+    "start": "node ./bin/www",
     "test": "node_modules/.bin/mocha -w"
   },
   "dependencies": {
@@ -23,12 +23,9 @@
     "kerberos": "~0.0.17"
   },
   "devDependencies": {
+    "chai": "^3.4.1",
     "mocha": "^2.3.4",
     "should": "^7.1.1",
-    "chai":  "^3.4.1"
-  },
-  "scripts": {
-   "start": "node ./bin/www",
-   "test": "node_modules/.bin/mocha -w"
- }
+    "supertest": "^1.1.0"
+  }
 }
